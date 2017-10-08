@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>育碧中国-仅用于个人练习</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="description" content="希望育碧能越来好" />
+		<meta name="keywords" content="个人，练习，育碧" />
+		<meta name="author" content="Neicen(聂传)" />
+
+		<!--Bootstrap CSS-->
+		<link href="bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
+
+		<!--plugins和main CSS-->
+		<link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+		<link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+		<link href="plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
+		<link href="plugins/Icons/et-line-font/style.css" rel="stylesheet">
+		<link href="plugins/animate.css/animate.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/login.css" rel="stylesheet" />
+
+		<!--Icons Font图标字体-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- jQuery插件 -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!--Vue-->
+		<script type="text/javascript" src="js/vue.js" ></script>
+		<script type="text/javascript" src="js/vue-router.js" ></script>
+		<script type="text/javascript" src="js/vue-resource.js" ></script>
+		
+		<!--AJAX-->
+		<script type="text/javascript" src="js/login.js" ></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!--隐藏端导航-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                        <span class="sr-only"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+					<!--logo-->
+					<a class="navbar-brand" href="#"><img src="img/logo/logo.png" id="img-responsive" alt="logo"></a>
+				</div>
+				<!--首页导航-->
+				<div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+					<div class="col-md-8 col-xs-12 nav-wrap">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#owl-hero" class="page-scroll">首页</a>
+							</li>
+							<li>
+								<a href="#portfolio" class="page-scroll">游戏</a>
+							</li>
+							<li>
+								<a href="#massage" class="page-scroll">资讯</a>
+							</li>
+							<li>
+								<a href="#video-game" class="page-scroll">社群</a>
+							</li>
+							<li>
+								<a href="#social-ways" class="page-scroll">支持</a>
+							</li>
+						</ul>
+					</div>
+					<!--搜索框-->
+					<div class="search-game ">
+						<ul class="nav navbar-nav">
+							<span><li><a href="#"><i class="fa fa-search"></i></a></li></span>
+							<input type="text" name="search-game" placeholder="搜索游戏" />
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<!--登入界面-->
+		<div class="login-form">
+			<div class="head-info">
+				<label class="lbl-1"> </label>
+				<label class="lbl-2"> </label>
+				<label class="lbl-3"> </label>
+			</div>
+			<div class="logo">
+				<img src="img/logo/logo.png" />
+			</div>
+			<form action="get">
+				<input type="text" class="login-userName" placeholder="请输入用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入用户名';}">
+				<div class="key">
+					<input type="password" class="login-psd" placeholder="请输入密码" onfocus="this.value = ''" }">
+				</div>
+				<p>如果没有账号，请点击<a class="change-register" href="#">注册</a></p>
+			</form>
+			<div class="signin">
+				<input type="submit" value="登入">
+			</div>
+		</div>
+		
+		<!--注册-->
+		<div class="register-form">
+			<div class="head-info">
+				<label class="lbl-1"> </label>
+				<label class="lbl-2"> </label>
+				<label class="lbl-3"> </label>
+			</div>
+			<div class="logo">
+				<img src="img/logo/logo.png" />
+			</div>
+			<form action="javascript:void(0)" method="get">
+				<input type="text" name="email" placeholder="请输入邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入邮箱';}">
+				<div id="f">
+					<input type="text" id="yonghuming" name="yonghuming" placeholder="请输入用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入用户名';}">
+				</div>
+				<div class="key">
+					<input type="password" name="mima" placeholder="请输入密码（6 ~ 12）" onfocus="this.value = ''" }">
+				</div>
+				<input type="radio" name="items" id="items" /><p>我已阅读《游戏》条款并同意该条款</p>
+				<div class="signin">
+					<input id="submit" type="submit" value="注册">
+				</div>
+				<input type="text" name="type" value="addUser" style="display: none;" />
+			</form>
+		</div>
+		
+		
+
+		<!--相关信息-->
+		<footer>
+			<div class="container">
+				<ul>
+					<li>关于我们 |</li>
+					<li>&nbsp;联系我们 |</li>
+					<li>&nbsp;加入我们</li>
+				</ul>
+				<br />
+				<h6>&copy; 2017-10 用 <a href="#" target="_blank">bootstrap、jQuery</a>以及其他插件完成 by <a>Neicen</a>完成</h6>
+				<p>仅用于个人练习，如涉及任何侵权问题，请与本人联系</p>
+			</div>
+		</footer>
+
+		<!-- 编译的插件或自己的js -->
+		<script src="bootstrap-assets/js/bootstrap.min.js"></script>
+		
+		<!-- JS PLUGINS -->		
+		<script src="js/jquery.easing.min.js"></script>
+	</body>
+
+</html>
